@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+     {% load static %}
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" crossorigin="anonymous" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Lobster+Two:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link href="{% static '.css/base.css' %}" rel="stylesheet">
+    <link href="{% static '.css/header.css' %}" rel="stylesheet">
+    <link href="{% static '.css/section.css' %}" rel="stylesheet">
+    <link href="{% static '.css/responsive.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="center-row">
+            <h2>Turon Boyd</h2>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <div class="center-row">
+                <a href="#">About Me</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Assignment 3 -->
+    <section class="center-row">
+        <div class="center-row">
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+    </section>
+
+
+
+    <footer>
+        <h2>Here is the footer</h2>
+    </footer>
+</body>
+</html>

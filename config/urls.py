@@ -16,11 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from pages.views import home_view, about_view  # Import your views
+from pages.views import home_view, about_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', home_view, name='home'),        # Home view
-    path('about/', about_view, name='about'),     # About view
-    path('', home_view, name='home'),              # Redirect root URL to home view
+    path('', home_view, name='home'),  # Root URL now serves the home view
+    path('home/', home_view, name='home'),  
+    path('about/', about_view, name='about'),  
 ]

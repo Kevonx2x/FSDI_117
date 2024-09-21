@@ -1,3 +1,4 @@
+{% load static %} 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     
-     {% load static %}
+
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" crossorigin="anonymous" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Lobster+Two:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     
-    <link href="{% static '.css/base.css' %}" rel="stylesheet">
-    <link href="{% static '.css/header.css' %}" rel="stylesheet">
-    <link href="{% static '.css/section.css' %}" rel="stylesheet">
-    <link href="{% static '.css/responsive.css' %}" rel="stylesheet">
+    <link href="{% static './css/base.css' %}" rel="stylesheet">
+    <link href="{% static './css/header.css' %}" rel="stylesheet">
+    <link href="{% static './css/section.css' %}" rel="stylesheet">
+    <link href="{% static './css/responsive.css' %}" rel="stylesheet">
 </head>
 <body>
-
+  
     <header>
         <div class="center-row">
             <h2>Turon Boyd</h2>
@@ -42,11 +43,9 @@
     <!-- Assignment 3 -->
     <section class="center-row">
         <div class="center-row">
-            <img src="./img/logo.png" alt="Logo">
+            <img src="{% static 'img/logo.png' %}" alt="Logo">
         </div>
     </section>
-
-
 
     <footer>
         <h2>Here is the footer</h2>

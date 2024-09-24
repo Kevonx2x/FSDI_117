@@ -1,13 +1,9 @@
-{% block content %}
-<section class="intro">
-    <h1> Hello, cohort 48!</h1>
-    <p>Welcome to the homepage. Here you'll find information about our projects and more.</p>
-</section>
+{% extends 'base.html' %}
 
-<section class="featured-posts">
-    <h2>Featured Projects</h2>
-    <div class="post-grid">
-        <!-- Add project cards here -->
-    </div>
-</section>
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<h1>Hello, cohort 48!</h1>
+
 {% endblock content %}

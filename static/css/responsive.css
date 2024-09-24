@@ -1,53 +1,59 @@
-/* Styling for hamburger menu spans */
-.hamburger span {
-    display: block;
-    height: 3px;
-    width: 30px;
-    background-color: var(--neutral-color);
-    margin: 6px auto;
+/* Phone */
+@media (max-width: 640px) {
+    html {
+        font-size: 10px;
+    }
+
+    .hamburger-btn {
+        display: inline-flex;
+    }
+
+    .hamburger-btn span {
+        display: block;
+        height: 3px;
+        width: 30px;
+        background-color: var(--neutral-color);  /* Corrected variable name */
+        margin: 6px auto;
+    }
+
+    /* Toggle Function */
+    #checkBox:not(:checked) ~ .nav-options {
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #checkBox:checked ~ .nav-options {
+        height: auto;
+        overflow: auto;
+    }
+
+    header {
+        height: max-content;
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .nav-options {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-options a {
+        margin: 1rem;
+    }
 }
 
-/* Toggle Function */
-input:checked + .nav-options {
-    height: 0;
-    overflow: hidden;
-}
-
-.nav-options {
-    height: auto;
-    overflow: auto;
-}
-
-/* Header Styling */
-header {
-    height: max-content;
-    display: flex; /* Added to enable flexbox */
-    flex-direction: column;
-    padding: 2%;
-}
-
-.logo {
-    width: 100%;
-}
-
-.nav-options {
-    display: flex; /* Added to enable flexbox */
-    flex-direction: column;
-    width: 100%;
-}
-
-.nav-options a {
-    margin: 1rem;
-}
-
-/* Media Queries for Responsive Design */
+/* Tablet */
 @media (max-width: 1007px) {
     html {
         font-size: 12px;
     }
-    
+
     .about-section {
-        display: flex; /* Added for layout control */
         flex-direction: column;
     }
 

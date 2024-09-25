@@ -16,11 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from pages.views import home_view, about_view
+from pages.views import home_view, about_view, projects_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', home_view, name='home'), 
-    path('', about_view, name='about'), 
+    path('home/', home_view, name='home'),  # Added trailing slash
+    path('', about_view, name='about'),     # This is fine if you want About as the root
     path('content/', include('content.urls')),
 ]

@@ -27,8 +27,9 @@
     margin: 2rem 0;
 }
 
+/* Project Section  */
 .projects-section {
-    border: sold red 2px;
+    border: solid red 2px;
     margin-top: 4rem;
 }
 
@@ -54,6 +55,56 @@
 }
 
 .project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+a p:nth-child(1), .experience-card a p:nth-child(1) {
+    font-size: 1.5rem;
+    color:var(--secondary-color-600);
+    font-weight: bolder;
+    margin: 0.5rem 0px;
+}
+
+a p:nth-child(3), .experience-card a p:nth-child(2) {
+    font-style: italic;
+}
+
+a p:nth-child(4), .experience-card a p:nth-child(4){
+    margin: 0.5rem 0px;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 0.5rem;
+}
+
+/* Experience Section */
+.experience-section {
+    margin-top: 4rem;
+}
+
+.experience-list {
+    border: solid white 0.5rem;
+    margin: 2rem 0px;
+}
+
+.experience-card {
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+.experience-card:hover {
+    opacity: 0.5;
+    border: solid 1px var(--primary-color);
+}
+
+.experience-card img {
+    width: 100%;
+}
+
+.experience-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;

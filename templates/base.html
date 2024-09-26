@@ -11,11 +11,12 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Lobster+Two:ital,wght@0,700;1,400&display=swap" 
     rel="stylesheet">
     
-    <link href="./css/base.css" rel="stylesheet">
-    <link href="./css/header.css" rel="stylesheet">
-    <link href="./css/section.css" rel="stylesheet">
-    <link href="./css/responsive.css" rel="stylesheet">
-    
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <link href="{% static 'css/header.css' %}" rel="stylesheet">
+    <link href="{% static 'css/section.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+
     <title>{% block title %}{% endblock title %}</title>
 </head>
 <body>
@@ -37,18 +38,19 @@
             <div class="hamburger-btn">
                 <label for="checkBox">
                     <span></span>
-                    <span></span>
+                    <span></span> 
                     <span></span>
                 </label>
             </div>
 
             <!-- Menu Options -->
             <div class="nav-options center-row">
-                <a href="#">About Me</a>
-                <a href="#">Projects</a>
-                <a href="#">Experience</a>
-                <a href="#">Contact Me</a>
+                <a href="{% url 'about' %}">About Me</a>
+                <a href="{% url 'projects_list' %}">Projects</a>
+                <a href="{% url 'experience_list' %}">Experience</a>
+                <a href=#>Contact Me</a>
             </div>
+            
         </nav>
 
     </header>

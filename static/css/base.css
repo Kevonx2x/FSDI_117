@@ -49,10 +49,10 @@ p {
 
 .text-label {
     color: var(--background-color);
-    background-color: var(--primary-color-100);
+    background-color: var(--primary-color); /* Fixed */
     text-transform: uppercase;
     font-weight: 600;
-    padding: 0.08 1.5rem;
+    padding: 0.08rem 1.5rem; /* Fixed */
     font-size: 1.1rem;
 }
 
@@ -67,4 +67,5 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 5rem;
 }

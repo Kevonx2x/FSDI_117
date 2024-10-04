@@ -48,7 +48,7 @@
                 <a href="{% url 'about' %}">About Me</a>
                 <a href="{% url 'projects_list' %}">Projects</a>
                 <a href="{% url 'experience_list' %}">Experience</a>
-                <a href=#>Contact Me</a>
+                <a href="{% url 'contact' %}">Contact Me</a>
             </div>
             
         </nav>
@@ -59,6 +59,16 @@
 
     {% endblock content %}
 
-    <h2> Here is the footer </h2>
+    <footer class="footer center-column">
+        <p>&copy; 2024 Turon Boyd. All rights reserved.</p>
+        <div class="footer-links center-row">
+            <a href="https://www.linkedin.com/in/turonboyd" target="_blank">LinkedIn</a>
+            <span>|</span>
+            <a href="https://github.com/turonboyd" target="_blank">GitHub</a>
+            <span>|</span>
+            <a href="{% url 'contact' %}">Contact Me</a>
+        </div>
+    </footer>
+    
 </body>
 </html>

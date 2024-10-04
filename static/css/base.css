@@ -32,6 +32,7 @@ h1 {
     color: var(--secondary-color-600);
     font-size: 2rem;
     text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
 h2 {
@@ -45,14 +46,15 @@ p {
     color: var(--neutral-color);
     line-height: 1.5rem;
     font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 .text-label {
     color: var(--background-color);
-    background-color: var(--primary-color); /* Fixed */
+    background-color: white; 
     text-transform: uppercase;
     font-weight: 600;
-    padding: 0.08rem 1.5rem; /* Fixed */
+    padding: 0.08rem 1.5rem; 
     font-size: 1.1rem;
 }
 
@@ -68,4 +70,43 @@ p {
     justify-content: center;
     flex-direction: column;
     margin-top: 5rem;
+}
+
+.primary-button {
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+    padding: 2.5% 5%;
+    color: var(--neutral-color);
+    background-color: var(--primary-color);
+}
+
+.primary-button:hover {
+    background: linear-gradient(135deg, #7F66FF 0%, #aa99ff 100%);
+}
+
+.footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    width: 100%;
+    background-color: var(--surface-color);
+    color: var(--neutral-color);
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.footer-links {
+    font-size: 1.2rem;
+}
+
+.footer-links a {
+    color: var(--neutral-color);
+    padding: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
 }

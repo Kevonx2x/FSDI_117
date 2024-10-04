@@ -14,5 +14,11 @@ class Project(models.Model):
     repository = models.URLField()
     skills = models.ManyToManyField(Skill)
 
+class Experience(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    year = models.IntegerField()
+    skills = models.ManyToManyField(Skill)
+
     def __str__(self):
         return f"{self.name} - ({self.year})"

@@ -4,7 +4,7 @@
 }
 
 .about-image-container img {
-    width: 50%;
+    width: 0%;
 }
 
 .about-image-container {
@@ -17,10 +17,11 @@
 
 .about-description-container p {
     width: 90%;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .skills-list {
+    color: white;
     flex-wrap: wrap;
     width: 70%;
     gap: 1rem;
@@ -29,83 +30,159 @@
 
 /* Project Section  */
 .projects-section {
-    border: solid red 2px;
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .projects-list {
-    border: solid blue 2px;
-    margin: 2rem 0px;
+  display: flex;
+  align-items: first baseline;
+  justify-content: center; 
+  flex-wrap: wrap;
+  gap: 2rem; 
+  margin-top: 3rem;
 }
 
 .project-card {
-    width: 25rem;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0.5rem;
+  width: 25rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--secondary-color-200); 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  transition: 0.3s ease-in-out; 
 }
 
 .project-card:hover {
-    opacity: 0.5;
-    border: solid 1px var(--primary-color);
+  opacity: 0.9;
+  border: solid 1px var(--primary-color);
+  transform: scale(1.02); 
 }
 
 .project-card img {
-    width: 100%;
+  width: 100%; 
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-card p {
+  margin: 1rem 0;
+  font-size: 18px;
 }
 
 .project-skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 a p:nth-child(1), .experience-card a p:nth-child(1) {
-    font-size: 1.5rem;
-    color:var(--secondary-color-600);
-    font-weight: bolder;
-    margin: 0.5rem 0px;
+  font-size: 1.5rem;
+  color: var(--secondary-color-600);
+  font-weight: bolder;
+  margin: 0.5rem 0px;
 }
 
 a p:nth-child(3), .experience-card a p:nth-child(2) {
-    font-style: italic;
+  font-style: italic;
 }
 
-a p:nth-child(4), .experience-card a p:nth-child(4){
-    margin: 0.5rem 0px;
-    font-weight: bolder;
-    font-style: italic;
-    letter-spacing: 0.5rem;
+a p:nth-child(4), .experience-card a p:nth-child(4) {
+  margin: 0.5rem 0px;
+  font-weight: bolder;
+  font-style: italic;
+  letter-spacing: 0.5rem;
 }
 
 /* Experience Section */
 .experience-section {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .experience-list {
-    border: solid white 0.5rem;
-    margin: 2rem 0px;
+  align-items: first baseline;
+  margin: 2rem 0px;
+  padding: 0;
+  display: flex; 
+  gap: 1rem; 
 }
 
 .experience-card {
-    width: 25rem;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0.5rem;
+  width: 25rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  margin: 0 0.5rem 1rem 0.5rem; 
 }
 
 .experience-card:hover {
-    opacity: 0.5;
-    border: solid 1px var(--primary-color);
+  opacity: 0.5;
 }
 
 .experience-card img {
-    width: 100%;
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  object-position: center 45%;
 }
 
 .experience-skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
 }
+
+.experience-card a p:nth-child(1) {
+  font-size: 1.5rem;
+  color: var(--secondary-color-600);
+  font-weight: bolder;
+  margin: 0.5rem 0px;
+}
+
+.experience-card a p:nth-child(2) {
+  font-style: italic;
+}
+
+.experience-card a p:nth-child(4) {
+  margin: 0.5rem 0px;
+  font-weight: bolder;
+  font-style: italic;
+  letter-spacing: 0.5rem;
+}
+
+.experience-card p:nth-child(3) {
+  margin: 0.5rem 0px;
+}
+
+  /* Contact Section  */
+  .contact-section #emailForm {
+    border: solid 1px var(--primary-color);
+    border-radius: 4px; 
+    padding: 1rem 2.5rem 2.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .contact-section p {
+    margin-bottom: 1rem;
+  }
+
+  .contact-section h2 {
+    margin-bottom: 1rem;
+  }
+
+  .contact-section h2 span {
+    color: var(--neutral-color);
+    font-family: inherit;
+  }
+
+

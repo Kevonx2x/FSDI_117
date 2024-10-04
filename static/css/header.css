@@ -1,6 +1,6 @@
 header {
     background-color: var(--surface-color);
-    height: 60px;
+    height: 60px; 
     position: sticky;
     top:0px;
 }
